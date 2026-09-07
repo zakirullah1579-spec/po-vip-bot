@@ -3,12 +3,14 @@ services:
     name: pocket-option-vip-bot
     runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
+    startCommand: python bot_web.py
     envVars:
       - key: BOT_TOKEN
-        sync: false
+        value: 8275592154:AAGJ2rW1a-Y0O1RzBcf8_gdk4HlpbMg0b-0
       - key: ADMIN_ID
-        sync: false
+        value: "93372553"
       - key: POCKET_OPTION_REG_LINK
-        sync: false
+        value: https://pocketoption.com/register
+      - key: PORT
+        value: "10000"
     plan: free
